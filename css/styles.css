@@ -1,0 +1,147 @@
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    margin:0;
+    text-align: center;
+  }
+
+
+
+/*menu de navegacao*/
+.topnav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  float: left;
+  background-color: #CDBBA7;
+  border-style: none;
+  overflow: hidden;
+  /* padding: 10px 10px; */
+}
+
+/*links dentro do menu*/
+.topnav a {
+  color: white;
+  float: left;
+  font-size:18px;
+  padding: 14px 18px;
+  /* text-align:justify; */
+  text-decoration: none;
+  /* border-radius:30px; */
+  /* font-family: "Lucida Console", monospace; */
+}
+
+/*alterar apenas a pagina que está selecionada */
+.topnav a.active{
+  background-color: #DAD0C2;
+  color: black;
+  font-weight: bold;
+}
+
+/*Quando rato passa por cima do item*/
+.topnav a:hover {
+  background-color: #F4DFD0;
+  color: black;
+  /* text-decoration-line: underline;
+  text-decoration-style: solid; */
+}
+
+ .topnav a.active:hover {
+  background-color: #F4DFD0;
+  color: black;
+  /* text-decoration: underline  ;*/
+}
+
+
+.dropdown{
+  float:left;
+  overflow: hidden;
+}
+
+.dropdownmenu {
+  display: none;
+  position: fixed;
+  background-color: #CDBBA7;
+  /* min-width: 160px; */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: -1;
+}
+
+.dropdownmenu a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdownmenu {
+  margin-top: 54px;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* referente ao texto introdutorio*/
+.intro{
+  margin-top: 100px;
+}
+
+.intro h1{
+  color: #494949;
+  text-align: center;
+}
+.intro p{
+  text-align: justify;
+  color: #2B2A2A;
+  font-size: 0.9em;
+  margin-left: 2%;
+}
+.intro hr{
+  background: #D6D6D6;
+  border: 0;
+  height: 1px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+/*galeria de imagens */
+.galeria {
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+
+
+}
+
+.imagens{
+  text-align: center;
+  margin: 7px;
+  float: left;
+  width: 300px;
+}
+
+.imagens:hover {
+
+}
+
+.desc {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  /* font-weight: bold; */
+}
