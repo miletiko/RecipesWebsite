@@ -85,8 +85,11 @@
 
 
 
-
-
+/*tudo o que se encontra na pagina exceto menu*/
+.conteudo {
+  margin-left: 12%;
+  margin-right: 12%;
+}
 
 
 
@@ -121,16 +124,13 @@
 
 /*galeria de imagens */
 .galeria {
-  text-align: center;
-  margin-left: 5%;
-  margin-right: 5%;
-
-
+padding: 0;
 }
 
 .imagens{
-  text-align: center;
-  margin: 7px;
+  padding: 0;
+  margin-left: 50px;
+  margin-bottom: 50px;
   float: left;
   width: 300px;
 }
@@ -140,7 +140,7 @@
 }
 
 .desc {
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   font-size: 15px;
   /* font-weight: bold; */
