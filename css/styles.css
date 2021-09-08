@@ -1,171 +1,194 @@
   body {
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1em;
+    font-size: 0.8em;
     color: #393E46;
-    margin:0;
+    margin: 0;
     text-align: center;
+  }
+
+  /*menu de navegacao*/
+  .topnav {
+    background-color: #EEEEEE;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .contentmenu {
+    float: auto;
+    margin-left: 12%;
+    margin-right: 12%;
+    overflow: hidden;
+  }
+
+  /*Links dentro do menu*/
+  .contentmenu a {
+    color: #393E46;
+    float: left;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 14px 18px;
+    text-decoration: none;
+  }
+
+  /*alterar apenas a pagina que está selecionada */
+  .contentmenu a.active {
+    background-color: #EEEEEE;
+    color: #00ADB5;
+    font-weight: 700;
+  }
+
+  /*Quando rato passa por cima do item*/
+  .contentmenu a:hover {
+    background-color: #EEEEEE;
+    color: #222831;
+    text-decoration-line:overline;
+  }
+
+  .contentmenu a.active:hover {
+    background-color: #EEEEEE;
+    color: #222831;
+    /* text-decoration: underline  ; */
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropdownmenu {
+    display: none;
+    position: fixed;
+    background-color: #EEEEEE;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: -1;
+  }
+
+  .dropdownmenu a {
+    float: none;
+    color: #393E46;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown:hover .dropdownmenu {
+    margin-top: 52px;
+    display: block;
+    color: #222831;
   }
 
 
 
-/*menu de navegacao*/
-.topnav {
-  background-color: #EEEEEE;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
+
+
+    /*BREADCRUMBS*/
+
+
+    /* Style the list */
+ul.breadcrumb {
+  float: left;
   width: 100%;
+  padding: 5px 10px;
+  list-style: none;
+  background-color: white;
 }
 
-.contentmenu{
-  float: auto;
 
-  margin-left: 12%;
-  margin-right: 12%;
-  overflow: hidden;
-}
-
-/*Links dentro do menu*/
-.contentmenu a{
-  color: #393E46;
+/* Display list items side by side */
+ul.breadcrumb li {
   float: left;
-  font-size:16px;
-  font-weight: bold;
-  padding: 14px 18px;
-  text-decoration: none;
-  /* font-family: "Lucida Console", monospace; */
+  display: inline;
+  font-size: 10px;
 }
 
-/*alterar apenas a pagina que está selecionada */
-.contentmenu a.active{
-  background-color: #EEEEEE;
-  color: #00ADB5;
-  font-weight: bold;
-}
-
-/*Quando rato passa por cima do item*/
-.contentmenu a:hover {
-  background-color: #EEEEEE;
-  color: #222831;
-  /* text-decoration-line: underline;
-  text-decoration-style: solid; */
-}
-
- .contentmenu a.active:hover {
-  background-color: #EEEEEE;
-  color: #222831;
-  /* text-decoration: underline  ;*/
-}
-
-
-.dropdown{
-  float:left;
-  overflow: hidden;
-}
-
-.dropdownmenu {
-  display: none;
-  position: fixed;
-  background-color: #EEEEEE;
-  /* min-width: 160px; */
-  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
-  z-index: -1;
-}
-
-.dropdownmenu a {
-  float: none;
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 0px;
   color: #393E46;
-  padding: 12px 16px;
+  content: " -> \00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #393E46;
   text-decoration: none;
-  display: block;
-  text-align: left;
 }
 
-.dropdown:hover .dropdownmenu {
-  margin-top: 52px;
-  display: block;
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
   color: #222831;
-
+  text-decoration: underline;
 }
 
 
 
 
 
-/*tudo o que se encontra na pagina exceto menu*/
-.conteudo {
-  margin-left: 12%;
-  margin-right: 12%;
-}
+  /*tudo o que se encontra na pagina exceto menu*/
+  .conteudo {
+    margin-left: 12%;
+    margin-right: 12%;
+  }
 
+  /* referente ao texto introdutorio*/
+  .intro {
+    margin-left: 12%;
+    margin-right: 12%;
+  }
 
+  .title {
+    float: auto;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.7em;
+  }
 
+  .title hr {
+    background: #D6D6D6;
+    border: 0;
+    height: 1px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
 
-/* referente ao texto introdutorio*/
-.intro{
-  margin-left: 12%;
-  margin-right: 12%;
+  .intro p {
+    text-align: justify;
+    color: #2B2A2A;
+    font-size: 0.9em;
+    margin-left: 2%;
+  }
 
-}
+  .intro hr {
+    background: #D6D6D6;
+    border: 0;
+    height: 1px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
 
+  /*galeria de imagens */
+  .galeria {
+    float: auto;
+    padding: 0;
+    display: inline-block;
+  }
 
-.title{
-  float: auto;
-  margin-top: 50px;
-  text-align: center;
+  .imagens {
+    background-color: transparent;
+    padding: 0;
+    float: left;
+    margin: 0px 30px 50px 25px;
+    width: 250px;
+  }
 
-}
-.title hr{
-  background: #D6D6D6;
-  border: 0;
-  height: 1px;
-  margin-top: 3em;
-  margin-bottom: 3em;
-}
+  .imagens:hover {}
 
-
-.intro p{
-  text-align: justify;
-  color: #2B2A2A;
-  font-size: 0.9em;
-  margin-left: 2%;
-}
-.intro hr{
-  background: #D6D6D6;
-  border: 0;
-  height: 1px;
-  margin-top: 3em;
-  margin-bottom: 3em;
-}
-
-
-
-
-
-
-/*galeria de imagens */
-.galeria {
-  float: auto;
-  padding: 0;
-  display: inline-block;
-}
-
-.imagens{
-  background-color: transparent;
-  padding: 0;
-  margin-right: 30px;
-  margin-bottom: 50px;
-  float: left;
-  width: 300px;
-}
-
-.imagens:hover {
-
-}
-
-.description {
-  text-align: left;
-  font-weight: 800;
-  font-size: 20px;
-  margin-top: -5px;
-}
+  .description {
+    text-align: left;
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: -5px;
+  }
