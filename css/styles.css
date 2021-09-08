@@ -192,3 +192,18 @@ ul.breadcrumb li a:hover {
     font-size: 20px;
     margin-top: -5px;
   }
+
+
+.bigimage {
+  margin-top: 12px;
+  position: static;
+  float: left;
+}
+
+.ingredients {
+
+}
+
+.ingredients h1 {
+
+}
